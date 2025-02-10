@@ -1,0 +1,14 @@
+
+.App {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: greenyellow;
+  color: white;
+}
+
+.App h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
