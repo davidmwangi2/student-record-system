@@ -4,7 +4,7 @@ function BotCard({ bot, enlistBot, deleteBot }) {
         <h3>{bot.name}</h3>
         <p>Class: {bot.class}</p>
         <button
-          onClick={(e) => {
+          onClick={(e)=> {
             e.stopPropagation();
             deleteBot(bot.id);
           }}
