@@ -11,9 +11,9 @@ function App() {
   const products = [
     { id: 1, name: 'T-Shirt', price: 30 },
     { id: 2, name: 'Jeans', price: 50 },
-    { id: 3, name: 'Sneakers', price: 60 },
-    { id: 4, name: 'Hat', price: 15 },
-    { id: 5, name: 'Socks', price: 5 }
+    { id: 3, name: 'Sneakers', price: 80 },
+    { id: 4, name: 'Hat', price: 20 },
+    { id: 5, name: 'Socks', price: 10 }
   ];
 
   // Sort products based on selected type
@@ -24,7 +24,7 @@ function App() {
 
   // Filter products based on search query
   const filteredProducts = sortedProducts.filter((product) =>
-    product.name.toLowerCase().includes(searchQuery.toLowerCase())
+    product.name.toUpperCase().includes(searchQuery.toUpperCase())
   );
 
   // Load cart from localStorage on initial load
